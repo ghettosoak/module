@@ -1,0 +1,286 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a{
+  border:none;
+}
+
+a img{border:none;}
+
+body{
+  overflow: hidden;
+  background-color:black;
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+.logo{
+  position:fixed;
+  cursor: pointer;
+  top:30px;
+  left:30px;
+  z-index:2;
+  width:120px;
+}
+
+.plus{
+  position:fixed;
+  left: 127px;
+  top: 94px;
+  width: 17px;
+  z-index: 10;
+}
+
+#punkt{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 5px;
+  height: 5px;
+  z-index: 10;  
+}
+
+.soc_vi, .soc_fb, .soc_in{
+  position:fixed;
+  width:36px;
+  height:31px;
+  top:200px;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,.6);
+  z-index: 10;
+  cursor:pointer;
+}
+
+.soc_vi img, .soc_fb img, .soc_in img{width: 29px;}
+
+.soc_vi img{margin: 7px 0px 0px 6px;}
+.soc_fb img{margin: 5px 0px 0px 6px;}
+.soc_in img{margin: 5px 0px 0px 5px;}
+
+.soc_vi{left:114px}
+.soc_fb{left:72px;}
+.soc_in{left:30px;}
+
+
+.soc_vi:hover{background-color:rgb(57, 183, 233);}
+.soc_fb:hover{background-color:rgb(38, 51, 104);}
+.soc_in:hover{background-color:rgb(152, 29, 126);}
+
+.contact{
+  position: fixed;
+  top: 150px;
+  left: 30px;
+  width: 120px;
+  text-align: center;
+  font-family: georgia;
+  color: white;
+  font-size: 14px;
+  height: 31px;
+  z-index: 10;
+  font-style: italic;
+  padding-top: 7px;
+  background-color:rgb(0,0,0);
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.info_overlay{
+  position:fixed;
+  height:70%;
+  width:60%;
+  top:15%;
+  left:-100%;
+  background-color:rgb(0,0,0);
+  background-color: rgba(0, 0, 0, .8);
+  z-index:100;
+  color:white;
+  padding:13%;
+}
+
+@media only screen and (max-width : 320px) {
+  .info_overlay{
+    width:90%;
+    height:100%;
+    top:0px;
+    padding:1% 1% 1% 41px;
+  }
+}
+
+.info_overlay p{
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:13px;
+}
+
+.info_overlay a{
+  color:white;
+}
+
+.info_overlay_close{
+  position:absolute;
+  height:35px;
+  width:35px;
+  top:0px;
+  left:0px;
+  background:url(../inc/overlay_close.png) no-repeat;
+  background-size:35px 35px;
+}
+
+.info_overlay_close:hover{
+  cursor: pointer;
+  background:url(../inc/overlay_close_hover.png) no-repeat; 
+  background-size:35px 35px;
+}
+
+.holder{
+  top:0px;
+  left:0px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.master{
+  position: absolute;
+  height: 100%;
+}
+
+.master div{
+  float:left;
+  clear:right;
+  display:inline;
+  position:relative;
+  overflow: hidden;
+}
+
+.master div img{position: absolute;}
+
+.pointl, .pointr, .pointhoverl, .pointhoverr{
+  position:fixed;
+  height:400px;
+  width:40px; 
+}
+
+.pointl, .pointr{
+  z-index:2;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,.5);
+  display:table;
+}
+
+.pointhoverl, .pointhoverr{z-index:4;}
+
+.pointl p, .pointr p{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.pointl img, .pointr img{width:40px;}
+
+.pointl{
+  left:0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.pointr{
+  right:0px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.pointhoverl{left:0px;}
+
+.pointhoverr{right:0px;}
+
+.keys{
+  height:129px;
+  width:129px;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,.6);
+  position:fixed;
+  z-index:2;
+  left:180px;
+  top:-129px;
+}
+
+.keys p{
+  font-face:georgia;
+  font-style:italic;
+  font-size:14px;
+  color:white;
+  text-align:center;
+}
+
+.keys img{
+  width:76px;
+}
+
+.t26 p{
+  font-family:georgia;
+  font-style:italic;
+  font-size:20px;
+  color:white;
+  text-align:center;
+  position: relative;
+  top: 45%;
+  display:none;
+}
+
+.loadingthx{
+  position:absolute;
+  top:20px;
+  left:20px;
+  z-index:3;
+}
+
+
+@media only screen and (max-width: 570px){
+  body{
+    overflow:visible !important;
+    position:inherit !important;
+  }
+
+  .soc_fb, .soc_vi, .soc_in, .keys, .info_overlay, .pointl, .pointr, .pointhoverl, .pointhoverr{display:none !important;}
+
+  .logo{width:70px !important;}
+  .plus{
+    left: 86px !important;
+    top: 66px !important;
+    width: 9px !important;
+  }
+
+
+  .contact{
+    width:70px !important;
+    top:98px !important;
+  }
+
+  #punkt{
+    top:30px !important;
+    right:30px !important;
+  }
+
+  .holder{
+    overflow:visible !important;
+    position:absolute !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
